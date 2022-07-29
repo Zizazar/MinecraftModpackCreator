@@ -25,7 +25,7 @@ class App(tk.Frame):
         labelFrame.pack()
         DownloadLabel = tk.Label(master=labelFrame, text="Репозиторий модов", width=32)
         DownloadLabel.pack(side=tk.LEFT)
-        DownloadedLabel = tk.Label(master=labelFrame, text="Скаченые моды", width=32)
+        DownloadedLabel = tk.Label(master=labelFrame, text="Установленые моды", width=32)
         DownloadedLabel.pack(side=tk.LEFT)
         DownloadList = tk.Listbox(master=mainFrame, width=32, height=16)
         DownloadList.pack(side=tk.LEFT)
@@ -49,7 +49,7 @@ class App(tk.Frame):
             path = config['Path']['Path'] + "/"
             os.remove(path + file)
             updateList()
-        butDownload = tk.Button(master=buttomFrame, text="Скачать", width=32, command= Download)
+        butDownload = tk.Button(master=buttomFrame, text="Установить", width=32, command= Download)
         butDownload.pack()
         Version = ttk.Combobox(master=buttomFrame, width=12, values=VersionVariations)
         Version.pack(side=tk.LEFT)
