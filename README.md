@@ -4,9 +4,9 @@
 ## Как установить
 1. Установи Python3
 2. Перейди в командную строку и пропиши
-   1. `pip install requests`
-   2. `pip install bs4`
-   3. `pip install lxml`
+   - `pip install requests`
+   - `pip install bs4`
+   - `pip install lxml`
 3. Запусти файл `main.py`
 
 ## Как использовать
