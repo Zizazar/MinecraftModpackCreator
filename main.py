@@ -75,7 +75,7 @@ class App(tk.Frame):
                 mb.showerror("Ошибка", "Выберите версию")
 
         updateList()
-        butUpdate = tk.Button(master=buttomFrame, text="Обновить список", width=15, command= updateList)
+        butUpdate = tk.Button(master=buttomFrame, text="Обновить", width=15, command= updateList)
         butUpdate.pack(side=tk.LEFT)
         butDelete = tk.Button(master=buttom2Frame, text="Удалить", width=32, command= Delete)
         butDelete.pack()
